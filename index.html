@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather.Com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- This is the nav bar -->
+    <header>
+        <nav>
+            <h1 id="web_title">Weather.Com</h1>
+            <div id="search_bar">
+                <input type="text" placeholder="Search..." id="search" role="searchbox">
+                <img src="search-icon.svg" id="search_btn" role="button">
+            </div>
+        </nav>
+    </header>
+
+    <section id="landing_page">
+        <h1 id="landing_text">To see weather of your location please search it in the search bar at top right corner.
+        </h1>
+        <img src="loading.gif" id="loading_animation">
+    </section>
+
+    <!-- This section is to show city name and its weather parameters -->
+    <main>
+
+        <section id="weather">
+            <div id="location">
+                <h1 id="location_name">Birgunj</h1>
+                <img src="refresh-icon.png" id="reload" role="button">
+            </div>
+
+            <div id="weather_data">
+                <div id="weather_params">
+                    <p id="sunrise">Sunrise: 6:35 AM</p>
+                    <p id="sunset">Sunset: 6:00 PM</p>
+                    <p id="precp">Precipitation: 24%</p>
+                    <p id="moisture">Moisture: 24%</p>
+                    <p id="cloudiness">Cloudiness: Partially cloud</p>
+                    <div id="temp_in_day">
+                        <p>Temperature Today</p>
+                        <table>
+                            <tr>
+                                <th>12:00 AM</th>
+                                <th>01:00 AM</th>
+                                <th>03:00 AM</th>
+                                <th>05:00 AM</th>
+                                <th>07:00 AM</th>
+                                <th>09:00 AM</th>
+                                <th>11:00 AM</th>
+                                <th>01:00 PM</th>
+                                <th>03:00 PM</th>
+                                <th>05:00 PM</th>
+                                <th>07:00 PM</th>
+                                <th>09:00 PM</th>
+                                <th>11:00 PM</th>
+                            </tr>
+                            <tr>
+                                <td >
+                                    <div>
+                                        <p id="temp_12_am">
+                                            20&#8451;
+                                        </p>
+                                        <img id="img_temp_12_am" src="cloud.png">
+                                    </div>
+                                <td>
+                                    <div>
+                                        <p id="temp_1_am">23&#8451;</p><img src="cloud.png" id="img_temp_1_am">
+                                        <div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p id="temp_3_am">10&#8451;</p><img src="cloud.png" id="img_temp_3_am">
+                                        <div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p id="temp_5_am">40&#8451;</p> <img src="cloud.png" id="img_temp_5_am">
+                                        <div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p id="temp_7_am">56&#8451;</p> <img src="cloud.png" id="img_temp_7_am">
+                                        <div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p id="temp_9_am">69&#8451;</p><img src="cloud.png" id="img_temp_9_am">
+                                        <div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p id="temp_11_am">29&#8451;</p><img src="cloud.png" id="img_temp_11_am">
+                                        <div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p id="temp_1_pm">49&#8451;</p><img src="cloud.png" id="img_temp_1_pm">
+                                        <div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p id="temp_3_pm">19&#8451;</p><img src="cloud.png" id="img_temp_3_pm">
+                                        <div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p id="temp_5_pm">39&#8451;</p><img src="cloud.png" id="img_temp_5_pm">
+                                        <div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p id="temp_7_pm">29&#8451;</p><img src="cloud.png" id="img_temp_7_pm">
+                                        <div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p id="temp_9_pm">49&#8451;</p><img src="cloud.png" id="img_temp_9_pm">
+                                        <div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <p id="temp_11_pm">39&#8451;</p><img src="cloud.png" id="img_temp_11_pm">
+                                        <div>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>
+                <div id="temperature">
+                    <span id="main_temp">
+                        <h1 id="temp_1">18</h1>
+                        <span id="celsius">&#8451;</span>
+                    </span>
+                    <h3 id="temp_2">Feels like 16&#8451;</h3>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- This is to footer of webpage -->
+    <footer>
+        <h2>Developed By Bishwash patel</h2>
+        <P>All right reserved &copy;2024</P>
+        <p>Data is fetched from VisualCrossing Weather API. <a id="api_link" href="https://www.visualcrossing.com/">Click to visit</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
